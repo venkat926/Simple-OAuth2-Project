@@ -11,13 +11,15 @@ import java.util.Objects;
 @RestController
 public class OAuthController {
 
-    @GetMapping("/")
-    public String home(@AuthenticationPrincipal OAuth2User user) {
-        return "Welcome, " + user.getAttributes().get("name") + " !";
-    }
-
-    @GetMapping("/user")
-    public Map<String, Object> user(@AuthenticationPrincipal OAuth2User user) {
-        return user.getAttributes();
-    }
+//    @GetMapping("/")
+//    public String home(@AuthenticationPrincipal OAuth2User user) {
+////        if (user == null)
+////            return "redirect:/login";
+//        return "Welcome, " + user.getAttributes().get("name") + " !";
+//    }
+//
+//    @GetMapping("/user")
+//    public Map<String, Object> user(@AuthenticationPrincipal OAuth2User user) {
+//        return user.getAttributes();
+//    }
 }
